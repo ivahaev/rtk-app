@@ -8,6 +8,6 @@ describe('App', () => {
 
     const element = renderer.root.findByType(Checkbox)
     expect(element.props.name).toBe('anyCheckbox')
-    expect(element.props.label).toBe('Please click me')
+    expect(element.props.label).toBe('Please check me')
   })
 })

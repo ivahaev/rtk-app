@@ -5,7 +5,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
-        <Checkbox name="anyCheckbox" label="Please click me" />
+        <Checkbox name="anyCheckbox" label="Please check me" />
       </header>
     </div>
   )
