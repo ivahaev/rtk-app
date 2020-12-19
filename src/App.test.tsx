@@ -1,8 +1,13 @@
-import { render, screen } from '@testing-library/react'
+import { renderWithRedux } from './utils'
+import Checkbox from './Checkbox'
 import App from './App'
 
-test('renders learn react link', () => {
-  render(<App />)
-  const linkElement = screen.getByText(/learn react/i)
-  expect(linkElement).toBeInTheDocument()
+describe('App', () => {
+  it('renders Checkbox with name and label', () => {
+    const renderer = renderWithRedux(<App />)
+
+    const element = renderer.root.findByType(Checkbox)
+    expect(element.props.name).toBe('anyCheckbox')
+    expect(element.props.label).toBe('Please click me')
+  })
 })
