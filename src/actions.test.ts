@@ -1,8 +1,9 @@
+import configureStore from 'redux-mock-store'
 import { CHECKBOX_CLICK } from './actionTypes'
 import { checkboxClick } from './actions'
-import configureStore from 'redux-mock-store'
 
 const mockStore = configureStore([])
+
 describe('checkboxClick', () => {
   it('dispatches checkboxClick action with action name in payload', () => {
     const store = mockStore({})

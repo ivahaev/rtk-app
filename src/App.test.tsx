@@ -2,6 +2,8 @@ import { renderWithRedux } from './utils'
 import Checkbox from './Checkbox'
 import App from './App'
 
+jest.mock('./Checkbox', () => () => null)
+
 describe('App', () => {
   it('renders Checkbox with name and label', () => {
     const renderer = renderWithRedux(<App />)
