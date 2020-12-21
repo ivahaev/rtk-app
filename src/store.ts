@@ -1,13 +1,13 @@
-import { AnyAction, createStore, combineReducers } from 'redux'
+import { configureStore } from '@reduxjs/toolkit'
 import { Store } from './types'
-import reducer from './reducers'
+import reducer from './redux'
 
 export const createAppStore = (initialState?: Store) =>
-  createStore<Store, AnyAction, unknown, unknown>(
-    combineReducers({
+  configureStore({
+    reducer: {
       checkboxes: reducer,
-    }),
-    initialState,
-  )
+    },
+    preloadedState: initialState,
+  })
 
 export default createAppStore()
