@@ -1,3 +1,3 @@
-import { Store } from './types'
+import { State } from './types'
 
-export const getCheckboxState = (name: string) => (state: Store) => !!state.checkboxes[name]
+export const getCheckboxState = (name: string) => (state: State) => !!state.checkboxes[name]

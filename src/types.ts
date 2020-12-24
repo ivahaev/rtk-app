@@ -1,3 +1,3 @@
-export type Store = {
+export type State = {
   checkboxes: Record<string, boolean>
 }

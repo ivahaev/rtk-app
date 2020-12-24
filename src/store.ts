@@ -1,9 +1,9 @@
 import { AnyAction, createStore, combineReducers } from 'redux'
-import { Store } from './types'
+import { State } from './types'
 import reducer from './reducers'
 
-export const createAppStore = (initialState?: Store) =>
-  createStore<Store, AnyAction, unknown, unknown>(
+export const createAppStore = (initialState?: State) =>
+  createStore<State, AnyAction, unknown, unknown>(
     combineReducers({
       checkboxes: reducer,
     }),
