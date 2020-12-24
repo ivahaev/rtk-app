@@ -1,5 +1,5 @@
-import Checkbox from './Checkbox'
-import { act, renderWithRedux } from './utils'
+import { act, renderWithRedux } from 'utils'
+import Checkbox from '.'
 
 describe('Checkbox', () => {
   it('renders checkbox input', () => {

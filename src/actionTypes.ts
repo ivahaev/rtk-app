@@ -1,1 +1,1 @@
-export const CHECKBOX_CLICK = 'CHECKBOX_CLICK'
+export const CHECKBOX_CLICK = 'checkbox/click'

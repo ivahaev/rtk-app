@@ -1,5 +1,5 @@
-import { CHECKBOX_CLICK } from './actionTypes'
-import reducer from './reducers'
+import { CHECKBOX_CLICK } from 'actionTypes'
+import reducer from '.'
 
 describe('reducer', () => {
   it('creates default state', () => {

@@ -1,4 +1,4 @@
-import { CHECKBOX_CLICK } from './actionTypes'
+import { CHECKBOX_CLICK } from 'actionTypes'
 
 const initialState: Record<string, boolean> = {}
 

@@ -1,4 +1,4 @@
-import { getCheckboxState } from './selectors'
+import { getCheckboxState } from '.'
 
 describe('getCheckboxState', () => {
   const state = {

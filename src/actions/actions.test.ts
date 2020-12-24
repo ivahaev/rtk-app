@@ -1,6 +1,6 @@
 import configureStore from 'redux-mock-store'
-import { CHECKBOX_CLICK } from './actionTypes'
-import { checkboxClick } from './actions'
+import { CHECKBOX_CLICK } from 'actionTypes'
+import { checkboxClick } from '.'
 
 const mockStore = configureStore([])
 

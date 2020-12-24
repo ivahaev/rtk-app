@@ -1,7 +1,7 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { checkboxClick } from './actions'
-import { getCheckboxState } from './selectors'
+import { checkboxClick } from 'actions'
+import { getCheckboxState } from 'selectors'
 
 const Checkbox: React.FC<{ name: string; label: string }> = ({ name, label }) => {
   const dispatch = useDispatch()
